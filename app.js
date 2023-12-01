@@ -31,17 +31,17 @@ document.getElementById('convertButton').addEventListener('click', () => {
         // // Double the value and create text file
         // createTextFile(cellValue * 2);
         if (mode == "conventional") {
-            mpq26 = Math.round(analysisSheet['G36'].v);
-            mpq30 = Math.round(analysisSheet['G37'].v);
-            mpq32 = Math.round(analysisSheet['G38'].v);
+            mpq26 = Math.ceil(analysisSheet['G36'].v);
+            mpq30 = Math.ceil(analysisSheet['G37'].v);
+            mpq32 = Math.ceil(analysisSheet['G38'].v);
         } else if (mode == "mixed") {
-            mpq26 = Math.round(analysisSheet['H36'].v);
-            mpq30 = Math.round(analysisSheet['H37'].v);
-            mpq32 = Math.round(analysisSheet['H38'].v);
+            mpq26 = Math.ceil(analysisSheet['H36'].v);
+            mpq30 = Math.ceil(analysisSheet['H37'].v);
+            mpq32 = Math.ceil(analysisSheet['H38'].v);
         } else { // stealth
-            mpq26 = Math.round(analysisSheet['I36'].v);
-            mpq30 = Math.round(analysisSheet['I37'].v);
-            mpq32 = Math.round(analysisSheet['I38'].v);
+            mpq26 = Math.ceil(analysisSheet['I36'].v);
+            mpq30 = Math.ceil(analysisSheet['I37'].v);
+            mpq32 = Math.ceil(analysisSheet['I38'].v);
         }
 
         const text = "{ \
